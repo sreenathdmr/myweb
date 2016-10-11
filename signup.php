@@ -12,7 +12,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 	$password = "";
 	$dbName = "sample";
 
-	$conn = new mysqli($servername,$username,$password,$dbName);
+	$conn = new mysqli(null,$username,$password,$dbName,'/cloudsql/zinc-arc-122822:us-central1:mysql91');
 
 if($conn->connect_error)
 {
